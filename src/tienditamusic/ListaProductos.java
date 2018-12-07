@@ -3,7 +3,7 @@ package tienditamusic;
 import java.util.ArrayList;
 
 /**
- * Tiene una colección ArrayList de Productos y una instancia de MapaDiscos
+ * Tiene una colección ArrayList de Productos y una instancia de MapaDiscos.
  * 
  * @author Carlos Cubillos
  * @author Tomás Rojas
@@ -14,11 +14,11 @@ import java.util.ArrayList;
 
 public class ListaProductos {
     /**
-     * El ArrayList listaProducto almacena y maneja los Productos
+     * El ArrayList listaProducto almacena y maneja las instancias Producto.
      */
     private final ArrayList <Producto> listaProductos;
     /**
-     * Posee una instancia de MapaDiscos, para mantener la encapsulación
+     * Posee una instancia de MapaDiscos, para mantener la encapsulación.
      */
     private final MapaDiscos mapaDiscos;
 
@@ -28,17 +28,17 @@ public class ListaProductos {
     }
 
     /**
-     * Agrega un Producto al ArrayList listaProductos
+     * Agrega un Producto al ArrayList listaProductos.
      * 
-     * @param p
-     * @return Retorna true si funciona y false de fallar
+     * @param p 
+     * @return Retorna true si funciona y false en caso de fallar.
      */
     public boolean agregarProducto(Producto p) {
         return listaProductos.add(p);
     }
     
     /**
-     * Busca por ID un Producto y lo elimina de listaProductos 
+     * Busca por ID un Producto y lo elimina de listaProductos .
      * 
      * @param id
      * @return Retorna el Producto eliminado, de falla retorna null
@@ -55,8 +55,8 @@ public class ListaProductos {
     /**
      * Busca y edita (Reemplaza) un Producto de listaProductos
      * 
-     * @param p
-     * @return Retorna true si el Producto se modificó, false en caso contrario
+     * @param p es una 
+     * @return Retorna true si el Producto se encontró y modificó, false en caso contrario.
      */
     public boolean editarProducto(Producto p) {
         for(int i=0;i<listaProductos.size();i++) {
@@ -70,10 +70,10 @@ public class ListaProductos {
     }
 
     /**
-     * Busca un Producto en listaProductos y lo retorna
+     * Busca un Producto en listaProductos y lo retorna.
      * 
-     * @param nombre
-     * @return Retorna el producto de encontrarlo, de no ser así retorna null
+     * @param Cadena que contiene el nombre del producto que se desea buscar.
+     * @return Retorna la instancia Producto buscada en caso de encontrarla, de no ser así retorna null.
      */
     public Producto buscarProducto(String nombre){
         for(int i=0;i<listaProductos.size();i++){
@@ -85,10 +85,9 @@ public class ListaProductos {
     }
     
     /**
-     * Busca un Producto en listaProductos e indica si lo existe en la coleccion
-     * 
-     * @param p
-     * @return True si el Producto se encuentra en listaProductos, false si no
+     * Busca una instancia Producto en listaProductos e indica si esta existe o no en la colección.
+     * @param p es una referencia a instancia de clase Producto.
+     * @return True si el Producto se encuentra en listaProductos, false en el caso contrario.
      */
     public boolean buscarProducto(Producto p){
         for (int i=0;i<listaProductos.size();i++){

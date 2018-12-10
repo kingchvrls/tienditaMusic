@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienditamusic.AdminTrackController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="583.0">
+        <children>
+           <TableView fx:id="table" editable="true" prefHeight="360.0" prefWidth="509.0">
+             <columns>
+               <TableColumn fx:id="names" prefWidth="214.0" text="Nombre" />
+               <TableColumn fx:id="largo" prefWidth="128.0" text="Duracion" />
+                 <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="67.0" text="ID" />
+                 <TableColumn fx:id="generos" prefWidth="173.0" text="Genero" />
+             </columns>
+           </TableView>
+           <HBox alignment="CENTER" prefHeight="39.0" prefWidth="600.0" spacing="10.0">
+              <children>
+                 <TextField fx:id="name" prefHeight="31.0" prefWidth="143.0" promptText="Nombre" />
+                 <TextField fx:id="length" prefHeight="31.0" prefWidth="68.0" promptText="Duracion" />
+                 <TextField fx:id="id" prefHeight="31.0" prefWidth="63.0" promptText="ID" />
+                 <TextField fx:id="genero" prefHeight="31.0" prefWidth="91.0" promptText="Genero" />
+                 <Button fx:id="add" mnemonicParsing="false" onAction="#agregar" text="Agregar" />
+                 <Button fx:id="end" mnemonicParsing="false" onAction="#terminar" text="Terminar" />
+              </children>
+           </HBox>
+        </children>
+     </VBox>
+   </children>
+</AnchorPane>
